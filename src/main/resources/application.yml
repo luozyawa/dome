@@ -1,0 +1,26 @@
+server:
+  port: 8080
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://192.168.0.172:3306/demo
+    username: root
+    password: 123456
+  jpa:
+    show-sql: true
+  redis:
+    database: 0
+    host: 192.168.0.234
+    port: 6379
+    password: 123456
+    jedis:
+      pool:
+        max-active: 8
+        max-wait: 1ms
+        max-idle: 8
+        min-idle: 0
+    timeout: 5000ms
+
+project:
+  auth:
+    tonkenlength: 3600
